@@ -366,7 +366,7 @@ a {
   color: rgba(255, 255, 255, 1);
 }
 
-@media screen /*and (min-width: 426px)*/ and (max-width: 768px) {
+@media screen /*and (min-width: 426px) */ and (max-width: 768px) {
   body {
     width: 100%;
     height: auto;
@@ -455,7 +455,7 @@ a {
     height: auto;
     margin: 0px;
     padding: 0px;
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-items: center;
     align-items: center;
@@ -710,20 +710,28 @@ a {
     justify-content: center;
     align-content: center;
   }
-  .Header-title {
+  .Header-conteiner {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+  .Header-title {
+    max-width: 100%;
     height: auto;
     font-size: 32px;
     margin: 0px;
     padding: 20px;
   }
   .Header-content {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     margin: 0px;
     padding: 10px 15px;
     font-size: 12px;
     text-align: center;
+    justify-content: center;
   }
   .Header-button {
     width: 100%;
@@ -742,27 +750,28 @@ a {
   }
 
   /*Free content*/
-
   .article {
     width: 100%;
     height: auto;
     margin: 0px;
     padding: 0px;
-    display: block;
-    justify-content: center;
-    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
   }
   .article-title {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     margin: 0px;
+    margin-top: 40px;
     padding: 20px;
   }
   .articlr-text {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     margin: 0px;
-    padding: 10px 20px;
+    padding: 20px 45px;
     font-size: 12px;
     text-align: center;
   }
@@ -868,19 +877,19 @@ a {
     height: auto;
     margin: 0px;
     padding: 0px;
-
-    display: block;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-content: center;
   }
   .video-head {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     margin: 0px;
     padding: 20px;
   }
   .video-text {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     margin: 0px;
     padding: 10px 20px;
